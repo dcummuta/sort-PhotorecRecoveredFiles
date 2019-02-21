@@ -11,7 +11,7 @@ This minimalist version will keep duplicate copies like the original recovery.py
 
 ## Run the sorter
 
-Then run the sorter:
+To Run:
 
 ```python recovery.py <path to files recovered by Photorec> <destination>```
 
