@@ -36,11 +36,11 @@ For an overview of all arguments, run with the `-h` option: ```python recovery.p
 This version of recovery.py was specifically created to run a pre and post sort cleanup with the added `-r` 
 parameter option:```python recovery.py <path to files recovered by Photorec> <destination> -r```
 
-**this option cleans out all "junk" files that do not have extensions or are lower than 15kb
-for me the reason I created this was because 
-I have a lot of old drives that used to have OS's on them
-this means there are thousands of junk files that are 
-either unretreavable by photorec or are so small they are 
-tiny PNGs from web pages during browesing etc. 
-Currently this -r option only works on Windows.  
-I will be updating this to clean on linux/unix boxes but, I just have to test it with aditional error handling.  **
+**this option cleans out all "junk" files that do not have extensions or are lower than 15kb **
+**for me the reason I created this was because **
+**I have a lot of old drives that used to have OS's on them**
+**this means there are thousands of junk files that are **
+**either unretreavable by photorec or are so small they are **
+**tiny PNGs from web pages during browesing etc. **
+**Currently this -r option only works on Windows.  **
+**I will be updating this to clean on linux/unix boxes but, I just have to test it with aditional error handling.  **
