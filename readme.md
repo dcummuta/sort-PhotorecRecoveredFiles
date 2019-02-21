@@ -55,7 +55,7 @@ you do not need python installed on the windows machine to run this
 
 ## Potential future features/fixes
 - Want to make the .py file cross platform with error handling for different directory cleanup procedures
-- Reintroduce exifread script for jpg sorter from original fork and potentially expand this to give more metadata on other kids of files (movie names etc) Currently removed as it is not used by this script or the standalone exe.
+- Reintroduce exifread script for jpg sorter from original fork and potentially expand this to give more metadata on other kinds of files (movie names etc) Currently removed as it is not used by this script or the standalone exe.
 - Thinking of maybe making a tkinter gui for it
 - Potentially script in batch and bat files to run photorec via CLI version automatically from tkinter gui
 
