@@ -53,6 +53,12 @@ parameter option:```python recovery.py <path to files recovered by Photorec> <de
 Can be ran from windows CMD prompt with same parameter and source/destination rules as above **without python**, scripted into a bat file, etc
 you do not need python installed on the windows machine to run this 
 
+Windows exe Has been tested and works on: 
+
+- Windows 7 enterprise
+
+- Windows 10 Pro
+
 ## Potential future features/fixes
 - Want to make the .py file cross platform with error handling for different directory cleanup procedures
 - Reintroduce exifread script for jpg sorter from original fork and potentially expand this to give more metadata on other kinds of files (movie names etc) Currently removed as it is not used by this script or the standalone exe.
