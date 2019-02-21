@@ -40,6 +40,9 @@ For an overview of all arguments, run with the `-h` option: ```python recovery.p
 (if you are used to using a previous verison I suggest you do this as other arguments have been removed)
 
 
+**Currently this -r option only works on Windows.**
+**I will be updating this to clean on linux/unix boxes but, I just have to test it with aditional error handling.**
+
 This version of recovery.py was specifically created to run a pre and post sort cleanup with the added `-r` 
 parameter option:```python recovery.py <path to files recovered by Photorec> <destination> -r```
 
@@ -48,6 +51,14 @@ parameter option:```python recovery.py <path to files recovered by Photorec> <de
 **I have a lot of old drives that used to have OS's on them**
 **this means there are thousands of junk files that are**
 **either unretreavable by photorec or are so small they are**
-**tiny PNGs from web pages during browesing etc.**
-**Currently this -r option only works on Windows.**
-**I will be updating this to clean on linux/unix boxes but, I just have to test it with aditional error handling.**
+**tiny PNGs from web pages during browsing, BMP, dll, etc.**
+
+#### Standalone EXE 
+
+Can be ran from windows CMD prompt with same parameter and source/destination rules as above **without python**, scripted into a bat file, etc
+you do not need python installed on the windows machine to run this 
+
+## Potential future features/fixes
+- Want to make the .py file cross platform with error handling for different directory cleanup procedures
+- Thinking of maybe making a tkinter gui for it
+- Potentially script in batch and bat files to run photorec via CLI version automatically from tkinter gui
