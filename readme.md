@@ -15,7 +15,7 @@ Then run the sorter:
 
 ```python recovery.py <path to files recovered by Photorec> <destination>```
 
-This copies the recovered files to their folders that are created and named by their respective extensions in the destination directory you specify.  Things to note you must end the source and destination directories you chose in the command with a directory closing **\** or **/** depenending on if you are using this in unix or windows. 
+This copies the recovered files to their folders that are created and named by their respective extensions in the destination directory you specify.  Things to note you must end the source and destination directories you chose in the command with a directory closing \ or / depenending on if you are using this in unix or windows. 
 **Example:**
 ```python recovery.py C:\sourcefolder\ C:\destinationfolder\```
 
@@ -36,7 +36,7 @@ For an overview of all arguments, run with the `-h` option: ```python recovery.p
 This version of recovery.py was specifically created to run a pre and post sort cleanup with the added `-r` 
 parameter option:```python recovery.py <path to files recovered by Photorec> <destination> -r```
 **this option cleans out all "junk" files that do not have extensions or are lower than 15kb
-**for me the reason I created this was because I have a lot of old drives that used to have OS's on them
-**this means there are thousands of junk files that are either unretreavable by photorec or are so small they are 
-**tiny PNGs from web pages during browesing etc.  
-Currently this -r option only works on Windows.  I will be updating this to clean on linux/unix boxes but,  I just have to test it with aditional error handling.  
+for me the reason I created this was because I have a lot of old drives that used to have OS's on them
+this means there are thousands of junk files that are either unretreavable by photorec or are so small they are 
+tiny PNGs from web pages during browesing etc.  
+Currently this -r option only works on Windows.  I will be updating this to clean on linux/unix boxes but,  I just have to test it with aditional error handling.  **
