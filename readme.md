@@ -2,6 +2,11 @@
 
 Photorec does a great job when recovering deleted files. But the result is a huge, unsorted, unnamed amount of files. Especially for external hard drives serving as backup of all the personal data, sorting them is an endless job.
 
+Created this branch for a Minimalist version that is not concerned with JPG sorting, file counting, or delta event times.
+
+The primary purpose of the branch is for cleanup that is ran pre and post sorting.  This is to conserve drive space, manage the thousands of junk files that can still be created by photorec, and clean up photorec folders when it is done.  
+
+This minimalist version will keep duplicate copies like the original recovery.py and maintain all recup folders but, if -r is used it will clean all of this as well as many junk files that have no extention and are therefore useless.  
 
 ## Installation
 
