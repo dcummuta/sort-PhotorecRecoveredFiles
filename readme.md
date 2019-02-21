@@ -8,11 +8,6 @@ The primary purpose of the branch is for cleanup that is ran pre and post sortin
 
 This minimalist version will keep duplicate copies like the original recovery.py and maintain all recup folders but, if -r is used it will clean all of this as well as many junk files that have no extention and are therefore useless.  
 
-## Installation
-
-First install the package [exifread](https://pypi.python.org/pypi/ExifRead):
-
-```pip install exifread```
 
 ## Run the sorter
 
@@ -60,5 +55,7 @@ you do not need python installed on the windows machine to run this
 
 ## Potential future features/fixes
 - Want to make the .py file cross platform with error handling for different directory cleanup procedures
+- Reintroduce exifread script for jpg sorter from original fork and potentially expand this to give more metadata on other kids of files (movie names etc) Currently removed as it is not used by this script or the standalone exe.
 - Thinking of maybe making a tkinter gui for it
 - Potentially script in batch and bat files to run photorec via CLI version automatically from tkinter gui
+
