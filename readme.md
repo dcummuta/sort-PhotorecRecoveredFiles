@@ -16,7 +16,9 @@ Then run the sorter:
 ```python recovery.py <path to files recovered by Photorec> <destination>```
 
 This copies the recovered files to their folders that are created and named by their respective extensions in the destination directory you specify.  Things to note you must end the source and destination directories you chose in the command with a directory closing \ or / depenending on if you are using this in unix or windows. 
+
 **Example:**
+
 ```python recovery.py C:\sourcefolder\ C:\destinationfolder\```
 
 ```python recovery.py /home/downloads/sourcefolder/ /home/downloads/destinationfolder/```
