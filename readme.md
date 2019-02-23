@@ -38,30 +38,29 @@ For an overview of all arguments, run with the `-h` option: ```python recovery.p
 I will be updating this for linux/unix boxes but, I just have to test it with aditional error handling.
 I believe the script will run without any options on linux but, may run into issues when you try to use the clean options.  
 
-This version of recovery.py was specifically created to run a pre and post sort cleanup with the added `-r` 
+This version of recovery.py was specifically created to run a pre and post sort cleanup with the added 
+`-r` 
 parameter option:
 
 ```python recovery.py <path to files recovered by Photorec> <destination> -r```
 
-**this option cleans out all "junk" files that do not have extensions**
-**because of you run a large recovery there are thousands of junk files that are**
-**too corrupted for photorec or cannot be opened**
+Runs pre sort and post sort cleanups on files without extenstions or empty directories from other clean up options.
+
 
 **The application by default deletes all files that are below 15kb unless you use the `-f` option**
-**This substantially increases performance of the script because it isn't combing over 10,000 1kb files**
-**unless you want it keep them.  That is why I added this option**
-
+This substantially increases performance of the script if you have many files to sort. 
 For example if you wanted to remove anything equal to or less than 2KB 
 
 ```python recovery.py <path to files recovered by Photorec> <destination> -f2```
 
-**I have added an option to control if the script cleans up the original "recup" directories after it is done.** 
-**typically if you want to sort these in the same destination location as the source location this is nice **
-**because it gets rid of all the potentially hundreds of original folders so you can go through the sorted folders**
+I have added an option to control if the script cleans up the original "recup" directories after it is done. 
 
 **to activate this clean up use the `-rr` option**
 
 ```python recovery.py <path to files recovered by Photorec> <destination> -rr```
+
+## Note that the -f and -rr options delete files from the original directories so use caution or you'll have to run your photorec again
+
 
 #### Standalone EXE 
 
