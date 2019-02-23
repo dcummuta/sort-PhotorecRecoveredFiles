@@ -35,18 +35,29 @@ For an overview of all arguments, run with the `-h` option: ```python recovery.p
 (if you are used to using a previous verison I suggest you do this as other arguments have been removed)
 
 
-**Currently this -r option only works on Windows.**
+**Currently the optiond only work on Windows.**
 **I will be updating this to clean on linux/unix boxes but, I just have to test it with aditional error handling.**
 
 This version of recovery.py was specifically created to run a pre and post sort cleanup with the added `-r` 
 parameter option:```python recovery.py <path to files recovered by Photorec> <destination> -r```
 
-**this option cleans out all "junk" files that do not have extensions or are lower than 15kb**
-**for me the reason I created this was because**
-**I have a lot of old drives that used to have OS's on them**
+**this option cleans out all "junk" files that do not have extensions**
 **this means there are thousands of junk files that are**
-**either unretreavable by photorec or are so small they are**
-**tiny PNGs from web pages during browsing, BMP, dll, etc.**
+**unretreavable by photorec or cannot be opened**
+
+**The application by default deletes all files that are below 15kb unless you use the `-f` option**
+**This substantially increases performance of the script because it isn't combing over 10,000 1kb ini files and dlls**
+**unless you want it keep them.  That is why I added this option**
+
+For example if you wanted to remove anythin equal to or less than 20KB 
+
+```python recovery.py <path to files recovered by Photorec> <destination> -f20```
+
+**I have added an option to control if the script cleans up the original "recup" directories after it is done.** 
+**typically if you want to sort these in the same destination location as the source location this is nice **
+**because it gets rid of all the potentially hundreds of original folders so you can go through the sorted folders**
+**to activate this clean up use the `-rr` option**
+```python recovery.py <path to files recovered by Photorec> <destination> -rr```
 
 #### Standalone EXE 
 
